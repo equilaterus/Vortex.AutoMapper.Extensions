@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BCDE1DC4-3A8
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vortex.Automapper.Extensions", "src\Vortex.Automapper.Extensions.csproj", "{AD65B1CF-8E87-4286-92E1-02A241345753}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{CC614562-2449-4251-862F-820D5725C919}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vortex.Automapper.Extensions.Test", "test\Vortex.Automapper.Extensions.Test.csproj", "{BB43771B-7395-4CD8-9FC7-5354855FCAD6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +21,17 @@ Global
 		{AD65B1CF-8E87-4286-92E1-02A241345753}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD65B1CF-8E87-4286-92E1-02A241345753}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD65B1CF-8E87-4286-92E1-02A241345753}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB43771B-7395-4CD8-9FC7-5354855FCAD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB43771B-7395-4CD8-9FC7-5354855FCAD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB43771B-7395-4CD8-9FC7-5354855FCAD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB43771B-7395-4CD8-9FC7-5354855FCAD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AD65B1CF-8E87-4286-92E1-02A241345753} = {BCDE1DC4-3A85-4971-84D4-6DE9DB4E1D05}
+		{BB43771B-7395-4CD8-9FC7-5354855FCAD6} = {CC614562-2449-4251-862F-820D5725C919}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FB321FF3-C0B7-43C2-82A3-CA1F3AFFA10D}
