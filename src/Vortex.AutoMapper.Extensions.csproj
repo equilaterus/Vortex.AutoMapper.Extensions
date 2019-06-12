@@ -2,6 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Equilaterus</Authors>
+    <Company>Equilaterus</Company>
+    <Description>Vortex extensions for automapper</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Equilaterus.Vortex.AutoMapper.Extensions</PackageId>
+    <Version>0.1.0</Version>
+    <Copyright>Daniel Cañizares and Juan Felipe Cañizares @ 2019</Copyright>
+    <Product>Equilaterus.Vortex.AutoMapper.Extensions</Product>
+    <RepositoryUrl>https://github.com/equilaterus/Vortex.AutoMapper.Extensions</RepositoryUrl>
+    <PackageTags>Functional, Monads, Maybe, Automapper</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
