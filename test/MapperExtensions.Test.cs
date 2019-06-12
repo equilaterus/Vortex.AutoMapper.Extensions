@@ -1,0 +1,27 @@
+﻿using AutoMapper;
+using Equilaterus.Vortex;
+using Moq;
+using System;
+using System.Collections.Generic;
+using System.Text;
+using Xunit;
+
+namespace Vortex.AutoMapper.Extensions.Test
+{
+    public class MapperExtensions
+    {
+        [Fact]
+        public void MaybeMap_Success()
+        {
+            var mapperMock = new Mock<IMapper>();
+            mapperMock.Setup(x => x.Map<double>(1))
+                .Returns(1.2);
+
+            var objectMock = mapperMock.Object;
+            var result = objectMock.MaybeMap<double>(1);
+
+            Assert.IsType<Maybe<double>>(result);
+            Assert.Equal(1.2, result.Match(x => x, 0));
+        }
+    }
+}
