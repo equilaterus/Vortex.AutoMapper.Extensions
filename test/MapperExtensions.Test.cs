@@ -35,7 +35,20 @@ namespace Vortex.AutoMapper.Extensions.Test
 
             Assert.Throws<ArgumentNullException>(() => objectMock.MaybeMap<object>(new object()));
         }
-               
+
+        [Fact]
+        public void MaybeMap_SourceDestination_Success()
+        {
+            var mapperMock = new Mock<IMapper>();
+            mapperMock.Setup(x => x.Map(It.IsAny<object>(), It.IsAny<double>()))
+                .Returns(1.2);
+
+            var objectMock = mapperMock.Object;
+            var result = objectMock.MaybeMap(new object(), new double());
+
+            Assert.IsType<Maybe<double>>(result);
+            Assert.Equal(1.2, result.Match(x => x, 0));
+        }
 
         [Fact]
         public void MaybeMap_SourceDestination_Null_ThrowsException()
