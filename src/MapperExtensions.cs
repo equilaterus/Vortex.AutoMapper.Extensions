@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Vortex.AutoMapper.Extensions
+namespace Equilaterus.Vortex.AutoMapper.Extensions
 {
     public static class MapperExtensions
     {

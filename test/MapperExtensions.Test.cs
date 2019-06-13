@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Text;
 using Xunit;
 
-namespace Vortex.AutoMapper.Extensions.Test
+namespace Equilaterus.Vortex.AutoMapper.Extensions.Test
 {
     public class MapperExtensions
     {
