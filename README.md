@@ -1,6 +1,6 @@
 # Vortex AutoMapper Extensions
 
-[Vortex Extensions](https://github.com/equilaterus/Vortex) to facilitate its use with AutoMapper including *extension methods* for **IMapper** that return mapped data wrapped directly into a *Vortex's Monad/Functor* **Maybe**.
+Use [Vortex](https://github.com/equilaterus/Vortex) side-by-side with **AutoMapper** using *extension methods* for **IMapper** that return mapped data wrapped directly into a *Vortex's Monad/Functor* **Maybe**.
 
 ```csharp
 using Equilaterus.Vortex.AutoMapper.Extensions;
