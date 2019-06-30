@@ -63,7 +63,7 @@ namespace Equilaterus.Vortex.AutoMapper.Extensions.Test
                 .Returns(null);
             
             // Execute
-            Assert.Throws<ArgumentNullException>(() => mapperMock.Object.MaybeMap<object, object>(null, null));
+            Assert.Throws<ArgumentNullException>(() => mapperMock.Object.MaybeMap<object, object>(null, new object()));
         }
     }
 }
