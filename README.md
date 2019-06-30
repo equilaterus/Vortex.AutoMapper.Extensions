@@ -6,7 +6,7 @@ Use [Vortex](https://github.com/equilaterus/Vortex) side-by-side with **AutoMapp
 using Equilaterus.Vortex.AutoMapper.Extensions;
 ...
 
-// Returns IMaybe<DestinationType>
+// Returns Maybe<DestinationType>
 var maybeResult = IMapper.MaybeMap<DestinationType>(sourceEntity);
 ```
 
