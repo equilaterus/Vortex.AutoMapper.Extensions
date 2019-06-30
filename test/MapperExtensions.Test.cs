@@ -39,6 +39,34 @@ namespace Equilaterus.Vortex.AutoMapper.Extensions.Test
         }
 
         [Fact]
+        public void MaybeMapOpts_Success()
+        {
+            // Prepare
+            var mapperMock = new Mock<IMapper>();
+            mapperMock.Setup(x => x.Map<double>(1, null))
+                .Returns(1.2);
+
+            // Execute
+            var result = mapperMock.Object.MaybeMap<double>(1, null);
+
+            // Verify
+            Assert.IsType<Maybe<double>>(result);
+            Assert.Equal(1.2, result.Match(x => x, 0));
+        }
+
+        [Fact]
+        public void MaybeMapOpts_Null_ThrowsException()
+        {
+            // Prepare
+            var mapperMock = new Mock<IMapper>();
+            mapperMock.Setup(x => x.Map<object>(null, null))
+                .Returns(null);
+
+            // Execute
+            Assert.Throws<ArgumentNullException>(() => mapperMock.Object.MaybeMap<object>(null, null));
+        }
+
+        [Fact]
         public void MaybeMap_SourceDestination_Success()
         {
             // Prepare
